@@ -7,21 +7,21 @@
     tools:context=".HomeActivity">
 
     <RadioButton
-        android:id="@+id/textView1"
+        android:id="@+id/radioButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/select_me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
-        android:id="@+id/textView2"
+        android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World I am here!"
-        app:layout_constraintBottom_toBottomOf="@id/textView1"
+        android:text="@string/select_me_please"
+        app:layout_constraintBottom_toBottomOf="@id/radioButton1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
     <com.udit.android.flatradiogroup.FlatRadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView1,textView2" />
+        app:constraint_referenced_ids="radioButton1,radioButton2" />
 
 
 </android.support.constraint.ConstraintLayout>
