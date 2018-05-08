@@ -1,7 +1,7 @@
 Flat-Radio-Group
 ===============
 
-Flat-Radio-Group removes the need to nest children inside a ViewGroup(RadioGroup).
+Flat-Radio-Group removes the need to nest RadioButtons inside a ViewGroup(RadioGroup).
 To be used in conjunction with ConstraintLayout.
 
 Usage
