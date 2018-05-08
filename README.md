@@ -1,7 +1,7 @@
 Flat-Radio-Group
 ===============
 
-Radio Group Library without the need to nest children inside a RadioGroup.
+Flat-Radio-Group removes the need to nest children inside a ViewGroup(RadioGroup).
 To be used in conjunction with ConstraintLayout.
 
 Usage
@@ -11,7 +11,7 @@ Usage
 <com.udit.android.flatradiogroup.FlatRadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView1,textView2" />
+        app:constraint_referenced_ids="radioButton1,radioButton2" />
 ```
 
 License
