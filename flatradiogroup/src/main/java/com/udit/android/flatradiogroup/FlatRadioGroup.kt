@@ -63,4 +63,18 @@ class FlatRadioGroup : ConstraintHelper {
         params.width = 0
         params.height = 0
     }
+
+    fun clearSelection() {
+        if (currentSelectedView != -1) {
+            skipCheckingViewsRecursively = true
+            for (view in radioViews) {
+                if (view.getId() == currentSelectedView) {
+                    view.isChecked = false
+                    break
+                }
+            }
+            skipCheckingViewsRecursively = false
+            currentSelectedView = -1
+        }
+    }
 }
