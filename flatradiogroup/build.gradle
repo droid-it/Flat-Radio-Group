@@ -12,8 +12,8 @@ ext {
 
     libraryDescription = 'A widget to load WebView as an Overlay.'
 
-    siteUrl = 'https://github.com/ptyagicodecamp/webview-overlay'
-    gitUrl = 'https://github.com/ptyagicodecamp/webview-overlay.git'
+    siteUrl = 'https://github.com/uditverma5602/Flat-Radio-Group'
+    gitUrl = 'https://github.com/uditverma5602/Flat-Radio-Group.git'
 
     libraryVersion = '0.0.1'
 
@@ -26,8 +26,8 @@ ext {
     allLicenses = ["Apache-2.0"]
 }
 
-tasks.withType(Javadoc) {
-    options.addBooleanOption('Xdoclint:none', true)
+tasks.withType(Javadoc).all {
+    enabled = false
 }
 
 android {
@@ -70,4 +70,4 @@ repositories {
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'bintray.gradle'
