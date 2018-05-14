@@ -7,6 +7,14 @@ To be used in conjunction with ConstraintLayout.
 Usage
 -----
 
+In your gradle file, include the dependency as below:
+
+```groovy
+implementation 'com.udit.android:flatradiogroup:0.0.1'
+```
+
+Then in your xml layout, include the radio group as:
+
 ```xml
 <com.udit.android.flatradiogroup.FlatRadioGroup
         android:layout_width="wrap_content"
