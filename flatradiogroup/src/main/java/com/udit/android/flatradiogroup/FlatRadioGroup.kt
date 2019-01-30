@@ -20,6 +20,7 @@ class FlatRadioGroup : ConstraintHelper {
     private val radioViews = ArrayList<RadioButton>()
     private var skipCheckingViewsRecursively = false
     private var currentSelectedView: Int = -1
+    private var viewSelectedBeforePreLayout: Int = -1
 
     private val childCheckChangeListener = CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
         if (skipCheckingViewsRecursively) {
@@ -54,6 +55,7 @@ class FlatRadioGroup : ConstraintHelper {
             }
         }
 
+        if (viewSelectedBeforePreLayout != -1) selectViewProgramatically(viewSelectedBeforePreLayout)
     }
 
     override fun updatePostLayout(container: ConstraintLayout?) {
@@ -78,6 +80,9 @@ class FlatRadioGroup : ConstraintHelper {
 
     fun selectViewProgramatically(buttonViewId: Int) {
 
+        viewSelectedBeforePreLayout = if (radioViews.isEmpty()) {
+            buttonViewId
+        } else -1
 
         skipCheckingViewsRecursively = true
         for (view in radioViews) {
