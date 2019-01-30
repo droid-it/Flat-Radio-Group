@@ -3,4 +3,5 @@
     <string name="select_me">Select Me!</string>
     <string name="select_me_please">Select Me Please!</string>
     <string name="clearSelection">Clear Selection</string>
+    <string name="selectFirstOption">Select first option</string>
 </resources>
