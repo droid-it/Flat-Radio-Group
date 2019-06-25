@@ -13,5 +13,8 @@ class HomeActivity : AppCompatActivity() {
         clearSelectionButton.setOnClickListener {
             myRadioGroup.clearSelection()
         }
+
+        myRadioGroup?.selectViewProgramatically(radioButton1.id)
+
     }
 }
